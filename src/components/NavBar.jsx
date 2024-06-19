@@ -11,7 +11,7 @@ const NavBar = () => {
     return (
         <div className="border-y border-r rounded-e-md border-secondary shadow-lg shadow-black/50">
         <nav>
-          <ul className="flex flex-col justify-center items-center text-white gap-8 px-4 py-7 text-3xl">
+          <ul className="flex flex-col justify-center items-center text-white gap-10 px-4 py-7 text-3xl">
             <Link
               href={"/"}
               className={`${
@@ -29,7 +29,7 @@ const NavBar = () => {
               <AiOutlineProject />
             </Link>
   
-            <label className="swap swap-rotate border rounded-full p-1">
+            <label className="swap swap-rotate border rounded-full p-1 hover:scale-110 duration-300">
               {/* this hidden checkbox controls the state */}
               <input
                 type="checkbox"

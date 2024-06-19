@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
     return (
-        <div className="flex lg:flex-row flex-col-reverse  py-36">
+        <div className="flex lg:flex-row flex-col-reverse  my-36">
         <div className="lg:w-1/2">
           <p className="text-xl font-medium">Hello! I&apos;m</p>
           <h1 className="text-5xl font-medium uppercase mb-3">Shahin Alam</h1>
@@ -14,7 +14,7 @@ const HeroSection = () => {
             I&apos;m a <span className="text-3xl text-secondary font-medium"> Front-End Developer</span>
           </p>
           <p className="text-lg">
-            Front-End developer with good Back-End knowledge. Passionate about
+            I&apos;m a Front-End developer with good Back-End knowledge. Passionate about
             continuous learning and exploring new things daily. Dedicated and
             efficient, strive to complete tasks on time and always give my best
             effort. Currently seeking an opportunity to work with a team to gain

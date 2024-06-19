@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import SkillSection from "@/components/SkillSection";
 import { ImDownload } from "react-icons/im";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         </button>
       </div>
       <HeroSection></HeroSection>
+      <SkillSection></SkillSection>
     </main>
   );
 }
