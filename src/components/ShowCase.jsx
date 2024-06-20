@@ -1,15 +1,13 @@
  "use client"
 import Image from "next/image";
 import { useEffect, useState } from "react";
-
+import Link from "next/link";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
 
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow } from 'swiper/modules';
 
 const ShowCase = () => {
     const [datas, setDatas] = useState([])
@@ -30,17 +28,10 @@ const ShowCase = () => {
         <span className="text-secondary"> &#47;&#47; </span>
       </h1>
 
-      {/* <div className="p-3 shadow-lg">
-        <Image src={} alt="Logo"></Image>
-        <div className="p-3">
-            <h2 className="text-xl ">Name</h2>
-        </div>
-      </div> */}
-
       <Swiper
         effect={'coverflow'}
         slidesPerView={3}
-        spaceBetween={10}
+        spaceBetween={20}
         loop={true}
         grabCursor={true}
         centeredSlides={true}
@@ -52,18 +43,25 @@ const ShowCase = () => {
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow]}
         className="mySwiper"
       >
         {
-          datas?.map(item => <SwiperSlide key={item.id} >
-            <div className="shadow-lg ">
+          datas?.map(item => <SwiperSlide key={item.id} className="py-5" >
+          <Link href={item.live_link} target="_blank">
+          <div className="shadow-xl shadow-black/50 hover:shadow-secondary/10 duration-300">
             <Image src={item.image} alt="Logo"  width={1000} height={800}></Image>
-            <div className="p-3">
-                <h2 className="text-xl ">Name</h2>
+            <div className="px-3 py-4 border border-black/10">
+                <h2 className="text-2xl font-medium">{item.project_name}</h2>
+                <p className="text-gray-300/90 text-lg mb-5">{item.project_type}</p>
+                <div className="flex justify-evenly gap-4 flex-wrap pb-2">
+                {
+                  item?.tools.slice(0,8).map((tool, idx) => <p key={idx} className="shadow-lg shadow-black/50 px-3"> {tool} </p>)
+                }
+                </div>
             </div>
           </div>
+          </Link>
             </SwiperSlide>)
         }
       </Swiper>
