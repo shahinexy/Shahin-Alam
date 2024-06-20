@@ -101,7 +101,7 @@ const SkillSection = () => {
     },
   ]
   return (
-    <div className="pb-12">
+    <div className="mb-28">
       <h1 className="text-4xl font-semibold mb-12 uppercase text-center">
         <span className="text-secondary">&#47;&#47; </span> Skills <span className="text-secondary"> &#47;&#47; </span>
       </h1>

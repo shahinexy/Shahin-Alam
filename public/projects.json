@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "project_name": "MediShine",
+      "project_type": "Multi-Vendor E-commerce Website",
+      "tools": ["React.js", "Express.js", "Node.js", "MongoDB", "Firebase", "Stripe", "Tailwind CSS", "Keep React", "TanStack Query", "Swiper Slider", "HTML"],
+      "features": ["Users can easily pay via Stripe, download PDF invoices, and access their payment history.", "Sellers can request ads, manage product details, and view sales history and statistics.", "Admins can manage user roles, payment and ad statuses, download sales reports, and view statistics."],
+      "live_link": "https://medishine-4cd26.web.app",
+      "client_repo_link": "https://github.com/shahinexy/MediShien-Client",
+      "server_repo_link": "https://github.com/shahinexy/MediShine-Server",
+      "image": "https://www.myawesomeproject.com/image.png"
+    },
+    {
+      "id": 2,
+      "project_name": "ShineFix",
+      "project_type": "Home repair service",
+      "tools": ["React.js", "React Router", "Express.js", "Node.js", "MongoDB", "Firebase", "Tailwind CSS", "Next.UI", "Axios", "TanStack Query", "NodeMailer", "Swiper Slider", "HTML"] ,
+      "features": ["Service Providers can post about their service.", "Providers can update and delete their posts, and set their working status.", "Users can book services, view their booking list and status"],
+      "live_link": "https://shinefix-a-10.web.app/",
+      "client_repo_link": "https://github.com/shahinexy/ShineFix-Client",
+      "server_repo_link": "https://github.com/shahinexy/ShineFix-Server",
+      "image": "https://www.anothercoolproject.com/image.png"
+    },
+    {
+      "id": 3,
+      "project_name": "ShineArt",
+      "project_type": "Art & Craft Store",
+      "tools": ["React.js", "React router", "Express.js", "Node.js", "MongoDB", "Firebase", "Tailwind CSS", "Daisy UI", "HTML"] ,
+      "features": ["A marketplace for artisans to sell handmade products directly to customers.", "Artisans can add, update and delete their Art & Craft Items.", "Have a Filter system based on customization for Artisans."],
+      "live_link": "https://sinerart-a-10.web.app/",
+      "client_repo_link": "https://github.com/shahinexy/ShinArt-Client",
+      "server_repo_link": "https://github.com/shahinexy/ShinArt-Server",
+      "image": "https://www.anothercoolproject.com/image.png"
+    }
+  ]
+  
