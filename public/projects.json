@@ -13,7 +13,7 @@
     {
       "id": 2,
       "project_name": "ShineFix",
-      "project_type": "Home repair service",
+      "project_type": "Home Repair Service",
       "tools": ["React.js", "React Router", "Express.js", "Node.js", "MongoDB", "Firebase", "Tailwind CSS", "Next.UI", "Axios", "TanStack Query", "NodeMailer", "Swiper Slider", "HTML"] ,
       "features": ["Service Providers can post about their service.", "Providers can update and delete their posts, and set their working status.", "Users can book services, view their booking list and status"],
       "live_link": "https://shinefix-a-10.web.app/",
@@ -31,6 +31,16 @@
       "client_repo_link": "https://github.com/shahinexy/ShinArt-Client",
       "server_repo_link": "https://github.com/shahinexy/ShinArt-Server",
       "image": "https://i.ibb.co/bFVp3GR/Screenshot-2024-06-20-194503.jpg"
+    },
+    {
+      "id": 4,
+      "project_name": "ShinerLux",
+      "project_type": "Real Estate Website",
+      "tools": ["React.js", "React router", "Firebase", "Tailwind CSS", "Daisy UI", "HTML"] ,
+      "features": ["Showcase stunning, high-resolution images and detailed descriptions of your luxurious properties, giving potential buyers an immersive experience of the listings.", "This site have user update section where user can modify user informetion.", "This website is fully protected from abnormal activity. User can't get full access of our website with out register in our site."],
+      "live_link": "https://ph-assignment-9-5c9a4.web.app/",
+      "client_repo_link": "https://github.com/shahinexy/ShinerLux",
+      "image": "https://i.ibb.co/DWVQKWv/Screenshot-2024-06-21-083129.jpg"
     }
   ]
   

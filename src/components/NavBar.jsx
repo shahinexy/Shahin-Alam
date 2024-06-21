@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 const NavBar = () => {
     const pathName = usePathname();
     return (
-        <div className="border-y border-r rounded-e-md border-secondary shadow-lg shadow-black/50">
+        <div className="border-y border-r bg-primary rounded-e-md border-secondary shadow-lg shadow-black/50">
         <nav>
           <ul className="flex flex-col justify-center items-center text-white gap-10 px-4 py-7 text-3xl">
             <Link
@@ -21,9 +21,9 @@ const NavBar = () => {
               <BiHomeAlt />
             </Link>
             <Link
-              href={"/project"}
+              href={"/projects"}
               className={`${
-                pathName === "/project" && "text-secondary"
+                pathName === "/projects" && "text-secondary"
               } hover:scale-125 hover:translate-x-1 duration-300`}
             >
               <AiOutlineProject />

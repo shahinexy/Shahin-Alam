@@ -6,21 +6,21 @@ import Link from "next/link";
 
 const HeroSection = () => {
     return (
-        <div className="flex lg:flex-row flex-col-reverse  my-36">
-        <div className="lg:w-1/2">
-          <p className="text-xl font-medium">Hello! I&apos;m</p>
-          <h1 className="text-5xl font-medium uppercase mb-3">Shahin Alam</h1>
+        <div className="flex lg:flex-row flex-col-reverse lg:gap-0 gap-3  lg:my-36 my-10">
+        <div className="lg:w-1/2 md:text-start text-center">
+          <p className="md:text-xl text-lg font-medium">Hello! I&apos;m</p>
+          <h1 className="md:text-5xl text-3xl font-medium uppercase mb-3">Shahin Alam</h1>
           <p className="text-xl mb-5">
-            I&apos;m a <span className="text-3xl text-secondary font-medium"> Front-End Developer</span>
+            I&apos;m a <span className="md:text-3xl text-2xl text-secondary font-medium"> Front-End Developer</span>
           </p>
-          <p className="text-lg">
+          <p className="md:text-lg">
             I&apos;m a Front-End developer with good Back-End knowledge. Passionate about
             continuous learning and exploring new things daily. Dedicated and
             efficient, strive to complete tasks on time and always give my best
             effort. Currently seeking an opportunity to work with a team to gain
             real world experience and increase my skills.
           </p>
-          <div className="flex gap-10 items-center my-8">
+          <div className="flex md:justify-start justify-center gap-10 items-center my-8">
             <button className="cursor-pointer bg-secondary hover:bg-primary text-black/80 hover:text-white font-semibold duration-500 px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.3rem_0.3rem_#F44336,-0.3rem_-0.3rem_#00BCD4] transition flex gap-2 items-center">
               <TbPlayerTrackNextFilled className="text-lg" /> Hire Me
             </button>
