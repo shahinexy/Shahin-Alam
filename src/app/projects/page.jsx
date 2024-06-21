@@ -14,7 +14,7 @@ const ProjectsPage = () => {
         }
         fetchData()
     },[])
-    console.log(datas);
+    
   return (
     <div className="max-w-6xl mx-auto px-4 pb-20">
       <h1 className="text-4xl font-semibold my-12 uppercase text-center">
@@ -25,9 +25,11 @@ const ProjectsPage = () => {
       <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
         {
             datas.map(item => <div key={item.id}>
-      <Link href={item.live_link} target="_blank">
-          <div className="shadow-xl shadow-black/50 hover:shadow-black/30 group duration-300 overflow-hidden">
-            <Image className="group-hover:scale-110 duration-500" src={item.image} alt="Logo"  width={1000} height={800}></Image>
+      <Link href={`/projects/${item.project_name}`} target="_blank">
+          <div className="shadow-xl shadow-black/50 hover:shadow-black/30 group duration-300 ">
+            <div className="overflow-hidden">
+            <Image className="group-hover:scale-110 group-hover:rotate-3 duration-500" src={item.image} alt="Logo"  width={1000} height={800}></Image>
+            </div>
             <div className="px-3 py-4 border border-black/10">
                 <h2 className="text-2xl font-medium">{item.project_name}</h2>
                 <p className="text-gray-300/90 text-lg mb-5">{item.project_type}</p>
