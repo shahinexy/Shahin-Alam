@@ -1,8 +1,10 @@
+"use client"
 import { TbPlayerTrackNextFilled } from "react-icons/tb";
 import { FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
 import shahinImage from "../../public/images/Shahin-Alam.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import { Typewriter } from "react-simple-typewriter";
 
 const HeroSection = () => {
     return (
@@ -11,7 +13,17 @@ const HeroSection = () => {
           <p className="md:text-xl text-lg font-medium">Hello! I&apos;m</p>
           <h1 className="md:text-5xl text-3xl font-medium uppercase mb-3">Shahin Alam</h1>
           <p className="text-xl mb-5">
-            I&apos;m a <span className="md:text-3xl text-2xl text-secondary font-medium"> Front-End Developer</span>
+            I&apos;m a <span className="md:text-3xl text-2xl text-secondary font-medium"> 
+            <Typewriter
+            words={['Front-End Developer.', 'React Developer.', 'Passionate Programmer.', 'Web Developer.']}
+            loop={false}
+            cursor
+            cursorStyle='_'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+               </span>
           </p>
           <p className="md:text-lg">
             I&apos;m a Front-End developer with good Back-End knowledge. Passionate about

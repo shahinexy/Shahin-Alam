@@ -19,9 +19,11 @@ export default function RootLayout({ children }) {
         </div>
         <div className="max-w-6xl mx-auto px-4 pt-7 flex justify-between">
           <p>shahinabrar33@gmail.com</p>
+          <a href="./resume/RESUME-OF-SHAHIN-ALAM.pdf" download="RESUME-OF-SHAHIN-ALAM">
           <button className="cursor-pointer bg-secondary hover:bg-primary text-black/80 hover:text-white font-semibold duration-500 px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.3rem_0.3rem_#F44336,-0.3rem_-0.3rem_#00BCD4] transition flex gap-2 items-center">
             <ImDownload className="text-lg" /> Resume
           </button>
+          </a>
         </div>
         {children}
       </body>
