@@ -33,9 +33,11 @@ const HeroSection = () => {
             real world experience and increase my skills.
           </p>
           <div className="flex md:justify-start justify-center gap-10 items-center my-8">
+            <Link href={"/contact"}>
             <button className="cursor-pointer bg-secondary hover:bg-primary text-black/80 hover:text-white font-semibold duration-500 px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.3rem_0.3rem_#F44336,-0.3rem_-0.3rem_#00BCD4] transition flex gap-2 items-center">
               <TbPlayerTrackNextFilled className="text-lg" /> Hire Me
             </button>
+            </Link>
             <div className="flex gap-4 text-secondary text-4xl">
               <Link href={"https://www.linkedin.com/in/shahinaalam/"} target="_blank">
                 <FaLinkedin className="border border-secondary p-1 hover:rotate-6 duration-500" />

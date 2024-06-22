@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Loader from "@/components/Loader";
 
 const ProjectsPage = () => {
     const [datas, setDatas] = useState([])
@@ -15,6 +16,7 @@ const ProjectsPage = () => {
         fetchData()
     },[])
     
+    if(datas.length === 0) return <Loader></Loader>
   return (
     <div className="max-w-6xl mx-auto px-4 pb-20">
       <h1 className="text-4xl font-semibold my-12 uppercase text-center">
@@ -28,7 +30,7 @@ const ProjectsPage = () => {
       <Link href={`/projects/${item.project_name}`}>
           <div className="shadow-xl shadow-black/50 hover:shadow-black/30 group duration-300 ">
             <div className="overflow-hidden">
-            <Image className="group-hover:scale-110 group-hover:rotate-3 duration-500" src={item.image} alt="Logo"  width={1000} height={800}></Image>
+            <Image className="group-hover:scale-110 group-hover:rotate-1 duration-500" src={item.image} alt="Logo"  width={1000} height={800}></Image>
             </div>
             <div className="px-3 py-4 border border-black/10">
                 <h2 className="text-2xl font-medium">{item.project_name}</h2>
