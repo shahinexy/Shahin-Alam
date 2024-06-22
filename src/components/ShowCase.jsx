@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 
-import { EffectCoverflow } from 'swiper/modules';
+import { EffectCoverflow, Mousewheel } from 'swiper/modules';
 
 const ShowCase = () => {
     const [datas, setDatas] = useState([])
@@ -24,14 +24,15 @@ const ShowCase = () => {
   return (
     <div className="pb-12">
       <h1 className="text-4xl font-semibold mb-12 uppercase text-center">
-        <span className="text-secondary">&#47;&#47; </span> Showcase
-        <span className="text-secondary"> &#47;&#47; </span>
+        <span className="text-secondary font-normal">&#47;&#47; </span> Showcase
+        <span className="text-secondary font-normal"> &#47;&#47; </span>
       </h1>
 
       <Swiper
         effect={'coverflow'}
         slidesPerView={3}
         spaceBetween={20}
+        mousewheel={true}
         loop={true}
         grabCursor={true}
         centeredSlides={true}
@@ -43,7 +44,7 @@ const ShowCase = () => {
           modifier: 1,
           slideShadows: true,
         }}
-        modules={[EffectCoverflow]}
+        modules={[EffectCoverflow, Mousewheel]}
         className="mySwiper"
       >
         {

@@ -5,13 +5,15 @@ import { AiOutlineProject } from "react-icons/ai";
 import { VscBook } from "react-icons/vsc";
 import { IoMailOutline } from "react-icons/io5";
 import { usePathname } from "next/navigation";
+import useTheme from "@/hooks/useTheme";
 
 const NavBar = () => {
     const pathName = usePathname();
+    const {changeTheme} = useTheme()
     return (
-        <div className="border-y border-r bg-primary rounded-e-md border-secondary shadow-lg shadow-black/50">
+        <div className="border-y border-r  rounded-e-md border-secondary shadow-lg shadow-black/50">
         <nav>
-          <ul className="flex flex-col justify-center items-center text-white gap-10 px-4 py-7 text-3xl">
+          <ul className="flex md:flex-col justify-center items-center text-white gap-10 px-4 md:py-7 py-3 text-3xl">
             <Link
               href={"/"}
               className={`${
@@ -32,9 +34,10 @@ const NavBar = () => {
             <label className="swap swap-rotate border rounded-full p-1 hover:scale-110 duration-300">
               {/* this hidden checkbox controls the state */}
               <input
+              onChange={changeTheme}
                 type="checkbox"
                 className="theme-controller"
-                value="synthwave"
+                value="dark"
               />
   
               {/* sun icon */}

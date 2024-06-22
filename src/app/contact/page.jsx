@@ -5,11 +5,11 @@ const ContactPage = () => {
   return (
     <div className="flex flex-col justify-center pb-20 mt-10 items-center">
             <h1 className="text-4xl font-semibold mb-5 uppercase text-center">
-        <span className="text-secondary">&#47;&#47; </span> Contact
-        <span className="text-secondary"> &#47;&#47; </span>
+        <span className="text-secondary font-normal">&#47;&#47; </span> Contact
+        <span className="text-secondary font-normal"> &#47;&#47; </span>
       </h1>
       <div className="md:w-2/4 mx-4 shadow-2xl">
-        <form className="px-24 pt-24 pb-7 space-y-7">
+        <form className="sm:px-24 px-12 pt-24 pb-7 space-y-7">
           <div>
             <input
               type="text"

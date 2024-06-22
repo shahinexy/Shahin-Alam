@@ -13,8 +13,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="text-white/90 bg-primary">
-      <div className="fixed flex h-screen items-center">
+      <body className="text-white/90 bg-primary dark:bg-[#0f172a] font-noto">
+      <div className="md:fixed z-50 md:flex md:h-screen items-center">
           <NavBar></NavBar>
         </div>
         <div className="max-w-6xl mx-auto px-4 pt-7 flex justify-between">

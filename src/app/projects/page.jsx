@@ -18,10 +18,10 @@ const ProjectsPage = () => {
     
     if(datas.length === 0) return <Loader></Loader>
   return (
-    <div className="max-w-6xl mx-auto px-4 pb-20">
-      <h1 className="text-4xl font-semibold my-12 uppercase text-center">
-        <span className="text-secondary">&#47;&#47; </span> Projects
-        <span className="text-secondary"> &#47;&#47; </span>
+    <div className="max-w-6xl mx-auto mt-10 px-4 pb-20">
+      <h1 className="text-4xl font-semibold mb-10 uppercase text-center">
+        <span className="text-secondary font-normal">&#47;&#47; </span> Projects
+        <span className="text-secondary font-normal"> &#47;&#47; </span>
       </h1>
 
       <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
@@ -35,7 +35,7 @@ const ProjectsPage = () => {
             <div className="px-3 py-4 border border-black/10">
                 <h2 className="text-2xl font-medium">{item.project_name}</h2>
                 <p className="text-gray-300/90 text-lg mb-5">{item.project_type}</p>
-                <div className="flex justify-evenly gap-4 flex-wrap pb-2">
+                <div className="flex justify-evenly gap-x-2 gap-y-4 flex-wrap pb-2">
                 {
                   item?.tools.slice(0,8).map((tool, idx) => <p key={idx} className="shadow-lg shadow-black/50 px-3"> {tool} </p>)
                 }

@@ -15,9 +15,13 @@ module.exports = {
       colors: {
         primary: '#00504d',
         secondary: '#28cfc9',
+      },
+      fontFamily: {
+        noto: '"Noto Serif", serif'
       }
     },
   },
+  darkMode: "class",
   plugins: [
     require('daisyui'),
   ],
