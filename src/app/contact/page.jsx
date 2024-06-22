@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
 const ContactPage = () => {
   return (
     <div className="flex flex-col justify-center pb-20 mt-10 items-center">
-            <h1 className="text-4xl font-semibold mb-5 uppercase text-center">
+            <h1 data-aos="zoom-out-down" data-aos-duration="500" className="text-4xl font-semibold mb-5 uppercase text-center">
         <span className="text-secondary font-normal">&#47;&#47; </span> Contact
         <span className="text-secondary font-normal"> &#47;&#47; </span>
       </h1>

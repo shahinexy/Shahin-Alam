@@ -7,7 +7,7 @@ import { MdArrowOutward } from "react-icons/md";
 const BlogPage = () => {
   return (
     <div className="max-w-6xl mx-auto h-screen px-4 pb-20 mt-10">
-      <h1 className="text-4xl font-semibold mb-5 uppercase text-center">
+      <h1 data-aos="zoom-out-down" data-aos-duration="500" className="text-4xl font-semibold mb-5 uppercase text-center">
         <span className="text-secondary font-normal">&#47;&#47; </span> Blogs
         <span className="text-secondary font-normal"> &#47;&#47; </span>
       </h1>

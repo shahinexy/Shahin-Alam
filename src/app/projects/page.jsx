@@ -19,7 +19,7 @@ const ProjectsPage = () => {
     if(datas.length === 0) return <Loader></Loader>
   return (
     <div className="max-w-6xl mx-auto mt-10 px-4 pb-20">
-      <h1 className="text-4xl font-semibold mb-10 uppercase text-center">
+      <h1 data-aos="zoom-out-down" data-aos-duration="500" className="text-4xl font-semibold mb-10 uppercase text-center">
         <span className="text-secondary font-normal">&#47;&#47; </span> Projects
         <span className="text-secondary font-normal"> &#47;&#47; </span>
       </h1>

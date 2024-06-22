@@ -102,7 +102,7 @@ const SkillSection = () => {
   ];
   return (
     <div className="mb-28">
-      <h1 className="text-4xl font-semibold mb-12 uppercase text-center">
+      <h1 data-aos="zoom-out-down" data-aos-duration="500" className="text-4xl font-semibold mb-12 uppercase text-center">
         <span className="text-secondary font-normal">&#47;&#47; </span> Skills{" "}
         <span className="text-secondary font-normal"> &#47;&#47; </span>
       </h1>

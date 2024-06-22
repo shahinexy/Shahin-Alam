@@ -23,7 +23,7 @@ const ShowCase = () => {
     console.log(datas);
   return (
     <div className="pb-12">
-      <h1 className="text-4xl font-semibold mb-12 uppercase text-center">
+      <h1 data-aos="zoom-out-down" data-aos-duration="500" className="text-4xl font-semibold mb-12 uppercase text-center">
         <span className="text-secondary font-normal">&#47;&#47; </span> Showcase
         <span className="text-secondary font-normal"> &#47;&#47; </span>
       </h1>
