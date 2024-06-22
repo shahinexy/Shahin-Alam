@@ -25,7 +25,7 @@ const ProjectsPage = () => {
       <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
         {
             datas.map(item => <div key={item.id}>
-      <Link href={`/projects/${item.project_name}`} target="_blank">
+      <Link href={`/projects/${item.project_name}`}>
           <div className="shadow-xl shadow-black/50 hover:shadow-black/30 group duration-300 ">
             <div className="overflow-hidden">
             <Image className="group-hover:scale-110 group-hover:rotate-3 duration-500" src={item.image} alt="Logo"  width={1000} height={800}></Image>
