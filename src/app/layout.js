@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import { ImDownload } from "react-icons/im";
+import Aso from "@/components/Aso";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="text-white/90 bg-primary dark:bg-[#0f172a] font-noto">
+      <Aso></Aso>
       <div className="md:fixed z-50 md:flex md:h-screen items-center">
           <NavBar></NavBar>
         </div>

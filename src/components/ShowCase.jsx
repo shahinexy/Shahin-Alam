@@ -30,7 +30,7 @@ const ShowCase = () => {
 
       <Swiper
         effect={'coverflow'}
-        slidesPerView={3}
+        slidesPerView={'auto'}
         spaceBetween={20}
         mousewheel={true}
         loop={true}
@@ -43,6 +43,12 @@ const ShowCase = () => {
           depth: 100,
           modifier: 1,
           slideShadows: true,
+        }}
+        breakpoints={{
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
         }}
         modules={[EffectCoverflow, Mousewheel]}
         className="mySwiper"

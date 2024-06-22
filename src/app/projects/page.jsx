@@ -28,7 +28,7 @@ const ProjectsPage = () => {
         {
             datas.map(item => <div key={item.id}>
       <Link href={`/projects/${item.project_name}`}>
-          <div className="shadow-xl shadow-black/50 hover:shadow-black/30 group duration-300 ">
+          <div data-aos="zoom-in-up" data-aos-duration={`${item.id * 400}`} data-aos-delay={`${item.id * 100}`} className="shadow-xl shadow-black/50 hover:shadow-black/30 group duration-300 ">
             <div className="overflow-hidden">
             <Image className="group-hover:scale-110 group-hover:rotate-1 duration-500" src={item.image} alt="Logo"  width={1000} height={800}></Image>
             </div>
