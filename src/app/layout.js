@@ -27,16 +27,16 @@ export default function RootLayout({ children }) {
               href={"https://www.linkedin.com/in/shahinaalam/"}
               target="_blank"
             >
-              <FaLinkedin className="border border-secondary p-1 hover:rotate-6 duration-500" />
+              <FaLinkedin className="border rotate-45 border-secondary p-1 hover:rotate-0 duration-500" />
             </Link>
             <Link href={"https://github.com/shahinexy"} target="_blank">
-              <FaGithub className="border border-secondary p-1 hover:rotate-6 duration-500" />
+              <FaGithub className="border rotate-45 border-secondary p-1 hover:rotate-0 duration-500" />
             </Link>
             <Link
               href={"https://discordapp.com/users/1121657284288856205"}
               target="_blank"
             >
-              <FaDiscord className="border border-secondary p-1 hover:rotate-6 duration-500" />
+              <FaDiscord className="border rotate-45 border-secondary p-1 hover:rotate-0 duration-500" />
             </Link>
           </div>
           <div className="flex justify-center h-full">
