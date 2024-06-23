@@ -11,7 +11,7 @@ const NavBar = () => {
     const pathName = usePathname();
     const {changeTheme} = useTheme()
     return (
-        <div className="border-y border-r  rounded-e-md border-secondary shadow-lg shadow-black/50">
+        <div className="border-y border-r  md:rounded-e-md border-secondary shadow-lg shadow-black/50">
         <nav>
           <ul className="flex md:flex-col justify-center items-center text-white gap-10 px-4 md:py-7 py-3 text-3xl">
             <Link

@@ -22,7 +22,7 @@ const ProjectDetail = ({ params }) => {
 
   if (!project) return <Loader></Loader>;
   return (
-    <div className="max-w-2xl mx-auto px-4 md:py-10 py-8">
+    <div className="max-w-2xl mx-auto px-4 md:pt-12 pb-20">
       <div className="text-base breadcrumbs mb-3">
         <ul>
           <li>

@@ -6,7 +6,7 @@ import SkillSection from "@/components/SkillSection";
 
 export default function Home() {
   return (
-    <main className="max-w-6xl mx-auto px-4 pb-20">
+    <main className="max-w-6xl mx-auto px-4 pb-20 overflow-x-hidden">
       <HeroSection></HeroSection>
       <SkillSection></SkillSection>
       <ShowCase></ShowCase>
