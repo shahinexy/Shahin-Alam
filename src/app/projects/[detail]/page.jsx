@@ -45,6 +45,7 @@ const ProjectDetail = ({ params }) => {
       <div className="mt-5">
         <h1 className="text-3xl font-medium">{project.project_name}</h1>
         <p className="text-xl text-white/80">{project.project_type}</p>
+        <p className="my-4">{project.descriptions}</p>
         <div className="mt-4">
           <p className="text-xl font-medium mb-2">Feature:</p>
           <ul className="list-disc ml-8 space-y-3">
