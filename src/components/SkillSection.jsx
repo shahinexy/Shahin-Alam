@@ -22,7 +22,7 @@ const SkillSection = () => {
     {
       icon: html,
       name: "HTML",
-      des: "Markup language",
+      des: "Hypertext Markup Language",
     },
     {
       icon: css,
@@ -52,7 +52,7 @@ const SkillSection = () => {
     {
       icon: nodejs,
       name: "Node Js",
-      des: "React Framework",
+      des: "JavaScript runtime",
     },
     {
       icon: expressjs,

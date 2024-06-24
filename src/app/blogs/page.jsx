@@ -14,7 +14,7 @@ const BlogPage = () => {
         <span className="text-secondary font-normal">&#47;&#47; </span> Blogs
         <span className="text-secondary font-normal"> &#47;&#47; </span>
       </h1>
-      <div className="grid md:grid-cols-3 grid-cols-1 text-center mt-20">
+      <div className="grid md:grid-cols-3 grid-cols-1 text-center mt-12">
         <div class="relative h-[350px] group duration-500 cursor-pointer group overflow-hidden text-gray-50 hover:duration-700 ">
           <div>
             <Image

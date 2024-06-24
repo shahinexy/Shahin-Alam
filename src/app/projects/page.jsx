@@ -49,14 +49,14 @@ const ProjectsPage = () => {
                 </div>
                 <div className="px-3 py-4 border border-black/10">
                   <h2 className="text-2xl font-medium">{item.project_name}</h2>
-                  <p className="text-gray-300/90 text-lg mb-5">
+                  <p className="text-gray-300/90 text-lg mb-3">
                     {item.project_type}
                   </p>
+                  <p className="text-sm mb-5">{item.descriptions.slice(0,115)}...</p>
                   <div className="flex justify-evenly gap-x-2 gap-y-4 flex-wrap pb-2">
                     {item?.tools.slice(0, 8).map((tool, idx) => (
                       <p key={idx} className="shadow-lg shadow-black/50 px-3">
-                        {" "}
-                        {tool}{" "}
+                        {tool}
                       </p>
                     ))}
                   </div>
