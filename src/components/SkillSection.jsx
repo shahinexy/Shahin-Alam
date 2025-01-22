@@ -16,7 +16,7 @@ import git from "../../public/images/icons8-git-480.png";
 import github from "../../public/images/icons8-github-512.png";
 import vscode from "../../public/images/icons8-vs-code-480.png";
 import figma from "../../public/images/icons8-figma-480.png";
-import typeScript from "../../public/images/Typescript.png";
+import typeScript from "../../public/images/typescript.png";
 import mongoose from "../../public/images/mongoose.png";
 import postman from "../../public/images/postman.png";
 import shopify from "../../public/images/shopify.png";
