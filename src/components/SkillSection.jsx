@@ -16,6 +16,10 @@ import git from "../../public/images/icons8-git-480.png";
 import github from "../../public/images/icons8-github-512.png";
 import vscode from "../../public/images/icons8-vs-code-480.png";
 import figma from "../../public/images/icons8-figma-480.png";
+import typeScript from "../../public/images/Typescript.png";
+import mongoose from "../../public/images/mongoose.png";
+import postman from "../../public/images/postman.png";
+import shopify from "../../public/images/shopify.png";
 
 const SkillSection = () => {
   const skills = [
@@ -50,6 +54,16 @@ const SkillSection = () => {
       des: "Frontend Library",
     },
     {
+      icon: nextjs,
+      name: "Next Js",
+      des: "React Framework",
+    },
+    {
+      icon: typeScript,
+      name: "TypeScript",
+      des: "Programming Language",
+    },
+    {
       icon: nodejs,
       name: "Node Js",
       des: "JavaScript runtime",
@@ -60,9 +74,14 @@ const SkillSection = () => {
       des: "Node Js Framework",
     },
     {
-      icon: nextjs,
-      name: "Next Js",
-      des: "React Framework",
+      icon: mongodb,
+      name: "MongoDB",
+      des: "NoSQL Database",
+    },
+    {
+      icon: mongoose,
+      name: "Mongoose",
+      des: "ODM library for MongoDB",
     },
     {
       icon: firebase,
@@ -70,9 +89,14 @@ const SkillSection = () => {
       des: "Backend As A Service",
     },
     {
-      icon: mongodb,
-      name: "MongoDB",
-      des: "NoSQL Database",
+      icon: postman,
+      name: "Postman",
+      des: "API testing tool",
+    },
+    {
+      icon: shopify,
+      name: "Shopify",
+      des: "E-commerce platform solution",
     },
     {
       icon: vercel,
@@ -102,7 +126,11 @@ const SkillSection = () => {
   ];
   return (
     <div className="mb-28">
-      <h1 data-aos="zoom-out-down" data-aos-duration="500" className="text-4xl font-semibold mb-12 uppercase text-center">
+      <h1
+        data-aos="zoom-out-down"
+        data-aos-duration="500"
+        className="text-4xl font-semibold mb-12 uppercase text-center"
+      >
         <span className="text-secondary font-normal">&#47;&#47; </span> Skills{" "}
         <span className="text-secondary font-normal"> &#47;&#47; </span>
       </h1>
@@ -111,8 +139,8 @@ const SkillSection = () => {
         {skills.map((item, idx) => (
           <div
             key={item.idx}
-      data-aos="zoom-in-up"
-      data-aos-duration="1000"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
             className="flex justify-center"
           >
             <div class="relative overflow-hidden w-32 h-32  cursor-pointer font-bold shadow-2xl">
